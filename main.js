@@ -6,8 +6,8 @@ let isMenuOpen = false;
 menuBtn.addEventListener("click", () => {
   isMenuOpen = !isMenuOpen;
   menuBtn.innerHTML = isMenuOpen
-    ? '<img src="/times-close-error-fail-failure-failed-x-cross-bad-svgrepo-com.svg">'
-    : '<img src="/hamburger-menu-mobile-svgrepo-com.svg">';
+    ? '<img src="times-close-error-fail-failure-failed-x-cross-bad-svgrepo-com.svg">'
+    : '<img src="hamburger-menu-mobile-svgrepo-com.svg">';
   navLinks.classList.toggle("active");
 });
 
@@ -40,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     // Close mobile menu if open
     if (navLinks.classList.contains("active")) {
       navLinks.classList.remove("active");
-      menuBtn.innerHTML = '<img src="/hamburger-menu-mobile-svgrepo-com.svg">';
+      menuBtn.innerHTML = '<img src="hamburger-menu-mobile-svgrepo-com.svg">';
       isMenuOpen = false;
     }
   });
